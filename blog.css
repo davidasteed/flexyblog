@@ -13,29 +13,33 @@ body {
 .hero {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    min-height: 14em;
 
     /* DO NOT CHANGE THESE */
     background-color: #444444;
 }
 
 .hero h1 {
-    padding-top: 4em;
+    /*padding-top: 4em;
     padding-bottom: 4em;
-    padding-left: 6em;
+    padding-left: 6em;*/
 
     /* DO NOT CHANGE THESE */
     color: #ffffff;
 }
 
+.hero nav {
+    align-self: flex-end;
+}
 .hero nav ul {
     list-style-type: none;
     margin-bottom: 1em;
 }
 
 .hero nav ul li {
-  display: inline;
-  padding-right: 1em;
+    display: inline;
+    margin-right: 1em;
 }
 
 .hero nav ul li a {
