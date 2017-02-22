@@ -13,116 +13,118 @@ body {
 
 /* default for >35em */
 
-  .hero {
-      display: flex;
-      justify-content: space-between;
-      flex-flow: row wrap;
-      /* DO NOT CHANGE THESE */
-      background-color: #444444;
-  }
+.hero {
+    display: flex;
+    flex-flow: column wrap;
+    /* DO NOT CHANGE THESE */
+    background-color: #444444;
+}
 
-  .hero h1 {
-      padding-bottom: 10%;
-      /* DO NOT CHANGE THESE */
-      color: #ffffff;
-  }
+.hero h1 {
+    margin: .2em 0;
+    /* DO NOT CHANGE THESE */
+    color: #ffffff;
+}
 
-  .hero nav {
-      padding-top: 10%;
-  }
+.hero nav ul {
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding-left: 0;
+}
 
-  .hero nav ul {
-      list-style-type: none;
-      margin-bottom: 1em;
-      padding-left: 0;
-  }
+.hero nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
 
-  .hero nav ul li {
-      display: inline;
-      margin-right: 1em;
-  }
+.hero nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
 
-  .hero nav ul li a {
-      color: #FFFFFF;
-      text-decoration: none;
-  }
+.container {
+    display: flex;
+    width: 98%;
+    margin: 0 auto;
+    flex-direction: column;
+}
 
-  .container {
-      display: flex;
-      width: 98%;
-      margin: 0 auto;
-      flex-direction: column;
-  }
+.posts {
+    display: flex;
+    flex-flow: row wrap;
+    /*flex-grow: 1;*/
+    justify-content: space-around;
+    align-content: space-between;
 
-  .posts {
-      display: flex;
-      flex-flow: row wrap;
-      /*flex-grow: 1;*/
-      justify-content: space-around;
-      align-content: space-between;
+    /* DO NOT CHANGE THESE */
+    color: #444444;
+}
 
-      /* DO NOT CHANGE THESE */
-      color: #444444;
-  }
+.posts article {
+    flex-flow: row wrap;
+    flex: 0 0 95%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-  .posts article {
-      flex-flow: row wrap;
-      flex: 0 0 95%;
-      margin-top: 1em;
-      margin-bottom: 1em;
+    /* DO NOT CHANGE THESE */
+    background-color: #dddddd;
+    border: 1px solid #444444;
+    height: 20em; /* this is just so we can see the articles since they have no content */
+}
 
-      /* DO NOT CHANGE THESE */
-      background-color: #dddddd;
-      border: 1px solid #444444;
-      height: 20em; /* this is just so we can see the articles since they have no content */
-  }
+.sidebar {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 0 0 25%;
+    align-items: flex-start;
+    /* DO NOT CHANGE THESE */
+    background-color: #aaaaaa;
+    color: #444444;
+}
 
-  .sidebar {
-      display: flex;
-      flex-flow: column wrap;
-      flex: 0 0 25%;
-      align-items: flex-start;
-      /* DO NOT CHANGE THESE */
-      background-color: #aaaaaa;
-      color: #444444;
-  }
+.sidebar section {
+    width: 90%;
+    margin: 1em;
+    /* DO NOT CHANGE THESE */
+    background-color: #dddddd;
+    border: 1px solid #444444;
+    height: 10em; /* this is just so we can see the articles since they have no content */
+}
 
-  .sidebar section {
-      width: 90%;
-      margin: 1em;
-      /* DO NOT CHANGE THESE */
-      background-color: #dddddd;
-      border: 1px solid #444444;
-      height: 10em; /* this is just so we can see the articles since they have no content */
-  }
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    /* DO NOT CHANGE THESE */
+    background-color: #444444;
+    color: #eeeeee;
+}
 
-  footer {
-      display: flex;
-      flex-flow: row wrap;
-      /* DO NOT CHANGE THESE */
-      background-color: #444444;
-      color: #eeeeee;
-  }
+footer nav ul {
+    margin-left: 2em;
+    margin-top: 2em;
+}
 
-  footer nav ul {
-      margin-left: 2em;
-      margin-top: 2em;
-  }
+footer nav ul li a {
+    color: #FFFFFF;
+}
 
-  footer nav ul li a {
-      color: #FFFFFF;
-  }
+footer p {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  footer p {
-      margin-top: 2em;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
+/* first media query required by assignment */
 @media screen and (min-width: 35em) and (max-width: 69.9em) {
   .hero {
       align-items: center;
-      min-height: 14em;
+      flex-flow: row wrap;
+      min-height: 10em;
+      justify-content: space-between;
+  }
+
+  .hero h1 {
+      margin-left: 13%;
   }
 
   .hero nav {
@@ -158,6 +160,12 @@ body {
   footer p {
       margin 0;
   }
+}
 
+/* Acer Iconia Tab A500 (adventure mode landscape orientation)*/
+@media screen and (min-width: 80em) {
+
+  .hero {
+  }
 
 }
