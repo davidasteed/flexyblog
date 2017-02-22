@@ -6,8 +6,8 @@ ul{margin:0;}
 
 
 body {
-    /* DO NOT CHANGE THESE */
-    font-family: Verdana, Arial, sans-serif;
+      /* DO NOT CHANGE THESE */
+      font-family: Verdana, Arial, sans-serif;
 }
 
 
@@ -22,13 +22,13 @@ body {
   }
 
   .hero h1 {
-    padding-bottom: 10%;
+      padding-bottom: 10%;
       /* DO NOT CHANGE THESE */
       color: #ffffff;
   }
 
   .hero nav {
-    padding-top: 10%;
+      padding-top: 10%;
   }
 
   .hero nav ul {
@@ -114,12 +114,50 @@ body {
   }
 
   footer p {
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
   }
 
 @media screen and (min-width: 35em) and (max-width: 69.9em) {
+  .hero {
+      align-items: center;
+      min-height: 14em;
+  }
 
-  
+  .hero nav {
+      align-self: flex-end;
+  }
+
+  .posts article {
+      flex: 0 0 43%;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .sidebar {
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+
+  .sidebar section {
+      flex: 0 0 27%;
+  }
+
+  footer {
+      align-items: center;
+  }
+
+  footer nav ul {
+      margin: 2em;
+
+  }
+
+  footer p {
+      margin 0;
+  }
+
+
 }
