@@ -4,15 +4,12 @@
 html,body,header,main,footer,section,aside,h1,h2,h3,h4,p{margin:0;padding:0;}
 ul{margin:0;}
 
-
 body {
       /* DO NOT CHANGE THESE */
       font-family: Verdana, Arial, sans-serif;
 }
 
-
 /* default for >35em */
-
 .hero {
     display: flex;
     flex-flow: column wrap;
@@ -162,10 +159,34 @@ footer p {
   }
 }
 
-/* Acer Iconia Tab A500 (adventure mode landscape orientation)*/
-@media screen and (min-width: 80em) {
-
+/* Acer "Imaginary Iconia Mini" Tab A599 (adventure mode landscape orientation)*/
+@media screen and (min-width: 70em) {
   .hero {
+      flex-flow: row wrap;
+      justify-content: center;
+  }
+
+  .hero h1, .hero nav {
+      margin-left: 2em;
+  }
+
+  .posts article {
+      flex-flow: row wrap;
+      flex: 0 0 27%;
+  }
+
+  .sidebar {
+      flex-flow: row wrap;
+      justify-content: space-around;
+  }
+
+  .sidebar section {
+      width: 27%;
+  }
+
+  footer {
+      flex-flow: column wrap;
+      align-items: center;
   }
 
 }
