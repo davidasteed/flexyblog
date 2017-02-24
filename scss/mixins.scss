@@ -1,0 +1,4 @@
+@mixin footerSpacing($multiplier) {
+    margin-left: $themeSize * $multiplier;
+    margin-top: $themeSize * $multiplier;
+}

@@ -6,8 +6,10 @@ footer {
     color: #eeeeee;
 
     nav ul {
-        margin-left: $themeSize * 2;
-        margin-top: $themeSize * 2;
+        // margin-left: $themeSize * 2;
+        // margin-top: $themeSize * 2;
+       @include footerSpacing($themeMultipler);
+
     }
 
     nav ul li a {
