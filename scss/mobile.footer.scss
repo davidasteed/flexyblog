@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    /* DO NOT CHANGE THESE */
+    background-color: $themeHeaderFooterColor;
+    color: #eeeeee;
+
+    nav ul {
+        margin-left: $themeSize * 2;
+        margin-top: $themeSize * 2;
+    }
+
+    nav ul li a {
+        color: #FFFFFF;
+    }
+
+    p {
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+@import "page.defaults";
+
+@import "mobile.header";
+@import "mobile.content";
+@import "mobile.footer";
+
+// @import "tablet.media";
+@import "tablet.header";
+@import "tablet.body";
+@import "tablet.footer";
+
+
+// @import "tablet.acer";
+@import "acer.header";
+@import "acer.body";
+@import "acer.footer";

@@ -1,0 +1,10 @@
+/* Acer "Imaginary Iconia Mini" Tab A599 (adventure mode landscape orientation)*/
+@media screen and (min-width: 70em) {
+    .hero {
+        flex-flow: row wrap;
+        justify-content: center;
+        h1, .hero nav {
+            margin-left: $themeSize * 2;
+        }
+    }
+}

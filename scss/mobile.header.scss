@@ -1,0 +1,29 @@
+/* default for >35em */
+.hero {
+    display: flex;
+    flex-flow: column wrap;
+    /* DO NOT CHANGE THESE */
+    background-color: $themeHeaderFooterColor;
+
+    h1 {
+        margin: $themeSideMargins;
+        /* DO NOT CHANGE THESE */
+        color: $themeHeaderText;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin-bottom: $themeSize;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: $themeSize;
+    }
+
+    nav ul li a {
+        color: $themeHeaderText;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,13 @@
+/* first media query required by assignment */
+@media screen and (min-width: 35em) and (max-width: 69.9em)
+{
+    footer {
+        align-items: center;
+        nav ul {
+            margin: $themeSize * 2;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}

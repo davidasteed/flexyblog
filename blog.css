@@ -1,192 +1,149 @@
-
 /* resetting some browser-default styles */
 /* DO NOT CHANGE THESE */
-html,body,header,main,footer,section,aside,h1,h2,h3,h4,p{margin:0;padding:0;}
-ul{margin:0;}
+html, body, header, main, footer, section, aside, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0; }
 
 body {
-      /* DO NOT CHANGE THESE */
-      font-family: Verdana, Arial, sans-serif;
-}
+  /* DO NOT CHANGE THESE */
+  font-family: Verdana, Arial, sans-serif; }
 
 /* default for >35em */
 .hero {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
+  /* DO NOT CHANGE THESE */
+  background-color: #444444; }
+  .hero h1 {
+    margin: 0.2em 0;
     /* DO NOT CHANGE THESE */
-    background-color: #444444;
-}
-
-.hero h1 {
-    margin: .2em 0;
-    /* DO NOT CHANGE THESE */
-    color: #ffffff;
-}
-
-.hero nav ul {
+    color: #ffffff; }
+  .hero nav ul {
     list-style-type: none;
     margin-bottom: 1em;
-    padding-left: 0;
-}
-
-.hero nav ul li {
+    padding-left: 0; }
+  .hero nav ul li {
     display: inline;
-    margin-right: 1em;
-}
-
-.hero nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
+    margin-right: 1em; }
+  .hero nav ul li a {
+    color: #ffffff;
+    text-decoration: none; }
 
 .container {
-    display: flex;
-    width: 98%;
-    margin: 0 auto;
-    flex-direction: column;
-}
+  display: flex;
+  width: 98%;
+  margin: 0 auto;
+  flex-direction: column; }
 
 .posts {
-    display: flex;
-    flex-flow: row wrap;
-    /*flex-grow: 1;*/
-    justify-content: space-around;
-    align-content: space-between;
-
-    /* DO NOT CHANGE THESE */
-    color: #444444;
-}
-
-.posts article {
+  display: flex;
+  flex-flow: row wrap;
+  /*flex-grow: 1;*/
+  justify-content: space-around;
+  align-content: space-between;
+  /* DO NOT CHANGE THESE */
+  color: #444444; }
+  .posts article {
     flex-flow: row wrap;
     flex: 0 0 95%;
     margin-top: 1em;
     margin-bottom: 1em;
-
     /* DO NOT CHANGE THESE */
     background-color: #dddddd;
     border: 1px solid #444444;
-    height: 20em; /* this is just so we can see the articles since they have no content */
-}
+    height: 20em;
+    /* this is just so we can see the articles since they have no content */ }
 
 .sidebar {
-    display: flex;
-    flex-flow: column wrap;
-    flex: 0 0 25%;
-    align-items: flex-start;
-    /* DO NOT CHANGE THESE */
-    background-color: #aaaaaa;
-    color: #444444;
-}
-
-.sidebar section {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 0 0 25%;
+  align-items: flex-start;
+  /* DO NOT CHANGE THESE */
+  background-color: #aaaaaa;
+  color: #444444; }
+  .sidebar section {
     width: 90%;
     margin: 1em;
     /* DO NOT CHANGE THESE */
     background-color: #dddddd;
     border: 1px solid #444444;
-    height: 10em; /* this is just so we can see the articles since they have no content */
-}
+    height: 10em;
+    /* this is just so we can see the articles since they have no content */ }
 
 footer {
-    display: flex;
-    flex-flow: row wrap;
-    /* DO NOT CHANGE THESE */
-    background-color: #444444;
-    color: #eeeeee;
-}
-
-footer nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  /* DO NOT CHANGE THESE */
+  background-color: #444444;
+  color: #eeeeee; }
+  footer nav ul {
     margin-left: 2em;
-    margin-top: 2em;
-}
-
-footer nav ul li a {
-    color: #FFFFFF;
-}
-
-footer p {
+    margin-top: 2em; }
+  footer nav ul li a {
+    color: #FFFFFF; }
+  footer p {
     margin-top: 2em;
     margin-left: auto;
-    margin-right: auto;
-}
+    margin-right: auto; }
 
 /* first media query required by assignment */
 @media screen and (min-width: 35em) and (max-width: 69.9em) {
   .hero {
-      align-items: center;
-      flex-flow: row wrap;
-      min-height: 10em;
-      justify-content: space-between;
-  }
-
-  .hero h1 {
-      margin-left: 13%;
-  }
-
-  .hero nav {
-      align-self: flex-end;
-  }
-
+    align-items: center;
+    flex-flow: row wrap;
+    min-height: 10em;
+    justify-content: space-between; }
+    .hero h1 {
+      margin-left: 13%; }
+    .hero nav {
+      align-self: flex-end; } }
+/* first media query required by assignment */
+@media screen and (min-width: 35em) and (max-width: 69.9em) {
   .posts article {
-      flex: 0 0 43%;
-  }
+    flex: 0 0 43%; }
 
   .container {
-      flex-direction: column;
-  }
+    flex-direction: column; }
 
   .sidebar {
-      flex-flow: row wrap;
-      justify-content: center;
-  }
-
-  .sidebar section {
-      flex: 0 0 27%;
-  }
-
+    flex-flow: row wrap;
+    justify-content: center; }
+    .sidebar .sidebar section {
+      flex: 0 0 27%; } }
+/* first media query required by assignment */
+@media screen and (min-width: 35em) and (max-width: 69.9em) {
   footer {
-      align-items: center;
-  }
-
-  footer nav ul {
-      margin: 2em;
-
-  }
-
-  footer p {
-      margin 0;
-  }
-}
-
+    align-items: center; }
+    footer nav ul {
+      margin: 2em; }
+    footer p {
+      margin: 0; } }
 /* Acer "Imaginary Iconia Mini" Tab A599 (adventure mode landscape orientation)*/
 @media screen and (min-width: 70em) {
   .hero {
-      flex-flow: row wrap;
-      justify-content: center;
-  }
-
-  .hero h1, .hero nav {
-      margin-left: 2em;
-  }
-
+    flex-flow: row wrap;
+    justify-content: center; }
+    .hero h1, .hero .hero nav {
+      margin-left: 2em; } }
+/* Acer "Imaginary Iconia Mini" Tab A599 (adventure mode landscape orientation)*/
+@media screen and (min-width: 70em) {
   .posts article {
-      flex-flow: row wrap;
-      flex: 0 0 27%;
-  }
+    flex-flow: row wrap;
+    flex: 0 0 27%; }
 
   .sidebar {
-      flex-flow: row wrap;
-      justify-content: space-around;
-  }
-
-  .sidebar section {
-      width: 27%;
-  }
-
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .sidebar section {
+      width: 27%; } }
+/* Acer "Imaginary Iconia Mini" Tab A599 (adventure mode landscape orientation)*/
+@media screen and (min-width: 70em) {
   footer {
-      flex-flow: column wrap;
-      align-items: center;
-  }
+    flex-flow: column wrap;
+    align-items: center; } }
 
-}
+/*# sourceMappingURL=blog.css.map */
